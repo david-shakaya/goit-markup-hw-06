@@ -916,6 +916,7 @@ color: rgba(255, 255, 255, 0.6);
 .modal-form-label-text {
   top: 12px;
   left: 42px;
+  color: #757575;
 }
 
 .modal-form-message {
@@ -937,5 +938,38 @@ color: rgba(255, 255, 255, 0.6);
 
 .modal-form-label-textarea-comments {
   position: absolute;
+  padding-top: 12px;
+  padding-left: 16px;
 
+  color: #757575;
+}
+
+.modal-form-checkbox-text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.modal-form-checkbox-text > a {
+  color: var(--accent-color);
+}
+
+.modal-form-btn {
+  width: 200px;
+  height: 50px;
+  
+  color: var(--title-light-words-color);
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
