@@ -857,13 +857,17 @@ color: rgba(255, 255, 255, 0.6);
   top: 50%;
   left: 50%;
   transform:translate(-50%, -50%);
+  
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
   width: 528px;
   height: 581px;
+  
   padding: 40px;
   background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 .modal-form-title {
   margin-bottom: 30px;
@@ -912,5 +916,26 @@ color: rgba(255, 255, 255, 0.6);
 .modal-form-label-text {
   top: 12px;
   left: 42px;
- 
+}
+
+.modal-form-message {
+  resize: none;
+  height: 120px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+.modal-form-label-textarea {
+  position: relative;
+}
+
+.modal-form-label-textarea-comments {
+  position: absolute;
+
 }
