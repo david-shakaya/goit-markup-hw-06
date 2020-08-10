@@ -893,6 +893,20 @@ color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
 }
 
+.modal-form-label:focus-within .modal-form-label-svg{
+  fill: var(--accent-color);
+}
+
+..modal-form-label-svg {
+  fill: var(--title-dark-words-color);
+}
+
+.modal-form-label:focus-within .modal-form-label-text{
+  transform: translateY(-30px);
+  left: 16px;
+  color: var(--accent-color);
+}
+
 .modal-form-label {
   position: relative;
 
@@ -900,7 +914,7 @@ color: rgba(255, 255, 255, 0.6);
   align-items: center;
 }
 
-.modal-form-label-svg{
+.modal-form-label-svg {
   width: 18px;
   height: 18px;
 
