@@ -1034,27 +1034,26 @@ border-radius: 4px;
   visibility: hidden;
 }
 
-.modal-form-checkbox-checked {
-  display: inline-block;
+.modal-form-checkbox-checked::before {
+  content:'';
+  display: block;
   height: 15px;
   width: 15px;
   box-sizing: border-box;
   border: solid var(--title-dark-words-color) 2px;
   border-radius: 1px;
-
   margin-right: 8.5px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-checkbox:checked + .modal-form-checkbox-checked {
+.modal-form-checkbox:checked + .modal-form-checkbox-checked::before {
+  content:'';
   background-image:url(../images/check-active.svg);
   height: 15px;
   width: 15px;
   border: none;
-  background-color: var(--accent-color);
-
+  background-color: var(--accent-color); 
 }
-
 
 .modal-form-checkbox-text {
   line-height: 1.71;
