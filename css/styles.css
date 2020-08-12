@@ -1067,10 +1067,31 @@ border-radius: 4px;
   pointer-events: none;
 }
 
+.close-modal-btn {
+  transform: translate(50%, -50%);
+}
+
 .close-btn{
+  display: flex;
   position: absolute;
+  top: 0px;
+  right: 0px;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: transparent;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.close-btn-svg > use {
+  position: absolute;
+  transform: translate(6px, 6px);
+  
 }
 
 
