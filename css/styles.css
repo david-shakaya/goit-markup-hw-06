@@ -913,6 +913,11 @@ border-radius: 4px;
   fill: var(--title-dark-words-color);
 }
 
+
+.modal-form-input:not(:placeholder-shown) ~ .modal-form-label-svg {
+  fill: var(--accent-color);
+}
+
 .modal-form-label:focus-within .modal-form-label-text,
 .modal-form-input:not(:placeholder-shown) + .modal-form-label-text{
   transform: translateY(-30px);
@@ -920,8 +925,7 @@ border-radius: 4px;
   color: var(--accent-color);
   font-size: 12px;
   line-height: 1.14;
-
-letter-spacing: 0.01em;
+  letter-spacing: 0.01em;
 }
 
 .modal-form-input {
@@ -995,6 +999,8 @@ letter-spacing: 0.01em;
 .modal-form-message:not(:placeholder-shown) + .modal-form-label-textarea-comments{
   transform: translate(-446px, -30px);
   color: var(--accent-color);
+  font-size: 12px;
+  line-height: 1.14;
 }
 
 .modal-form-label-textarea:focus-within .modal-form-message {
